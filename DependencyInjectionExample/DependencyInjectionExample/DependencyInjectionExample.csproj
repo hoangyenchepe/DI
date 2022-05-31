@@ -11,4 +11,16 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Auditing\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Core\" />
+    <Folder Include="Data\" />
+    <Folder Include="Domain\Rules\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Services\Notifications\" />
+  </ItemGroup>
+
 </Project>
