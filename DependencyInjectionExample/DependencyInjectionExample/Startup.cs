@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DependencyInjectionExample.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,7 +32,9 @@ namespace DependencyInjectionExample
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddTransient<ITransientService, SomeService>();
+            services.AddScoped<IScopedService, SomeService>();
+            services.AddSingleton<ISingletonService, SomeService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

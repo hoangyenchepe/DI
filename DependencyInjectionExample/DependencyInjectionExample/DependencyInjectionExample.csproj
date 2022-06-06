@@ -5,22 +5,41 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <Compile Remove="Areas\**" />
+    <Compile Remove="Auditing\**" />
+    <Compile Remove="Configuration\**" />
+    <Compile Remove="Core\**" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="Domain\**" />
+    <Compile Remove="Pages\**" />
+    <Content Remove="Areas\**" />
+    <Content Remove="Auditing\**" />
+    <Content Remove="Configuration\**" />
+    <Content Remove="Core\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Domain\**" />
+    <Content Remove="Pages\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="Auditing\**" />
+    <EmbeddedResource Remove="Configuration\**" />
+    <EmbeddedResource Remove="Core\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Domain\**" />
+    <EmbeddedResource Remove="Pages\**" />
+    <None Remove="Areas\**" />
+    <None Remove="Auditing\**" />
+    <None Remove="Configuration\**" />
+    <None Remove="Core\**" />
+    <None Remove="Data\**" />
+    <None Remove="Domain\**" />
+    <None Remove="Pages\**" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\" />
-    <Folder Include="Auditing\" />
-    <Folder Include="Configuration\" />
-    <Folder Include="Core\" />
-    <Folder Include="Data\" />
-    <Folder Include="Domain\Rules\" />
-    <Folder Include="Pages\" />
-    <Folder Include="Services\Notifications\" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
